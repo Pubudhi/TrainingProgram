@@ -1,0 +1,1 @@
+Why Main Method is 'Public' & 'Static'?
