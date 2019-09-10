@@ -1,0 +1,17 @@
+{
+    "request": {
+        "method": "PUT",
+        "url": "/api/products/1",
+        "bodyPatterns": [{
+            "equalToJson": "{ \"id\": 1, \"name\": \"new product\", \"creator\": \"tester\", \"createTime\": \"2015-09-07\" }",
+            "jsonCompareMode": "LENIENT"
+        }]
+    },
+    "response": {
+        "status": 200,
+        "body": "Update successfully.",
+        "headers": {
+            "x-token": " xxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        }
+    }
+}
