@@ -1,0 +1,17 @@
+{
+    "request": {
+        "method": "GET",
+        "url": "/your/ur?name=a",
+        "queryParameters" : {
+          "name" : {
+            "matches" : "a"
+          }
+      }
+    },
+    "response": {
+        "status": 200,
+        "body": "{\"name\":\"test\",\"request.query.search.[0]\":{{request.queryParameters.name}},\"request.url\":{{request.url}},\"request.requestLine.path\":{{request.requestLine.path}} }",
+    
+         "transformers": ["response-template"]
+    }       
+}
