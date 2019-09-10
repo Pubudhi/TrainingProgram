@@ -1,0 +1,17 @@
+{
+    "request": {
+        "method": "POST",
+        "url": "/api/product",
+        "bodyPatterns": [
+                 {"equalToJson" : "{ \"name\": \"new product\", \"creator\": \"tester\", \"createTime\": \"2015-09-07\" }", "jsonCompareMode": "LENIENT"}
+         ]
+    },
+    "response": {
+        "status": 201,
+        "body": "Add successfully.",
+         "headers":{
+                   "x-token":"xxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+         }
+    }
+ 
+}
